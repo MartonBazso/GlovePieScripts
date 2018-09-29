@@ -1,0 +1,100 @@
+﻿Key.W = Nunchuk.Up;
+Key.A = Nunchuk.Left;
+Key.S = Nunchuk.Down;
+Key.D = Nunchuk.Right ;
+Key.Space = Wiimote.B;
+Key.Escape = Wiimote.Home ;
+Mouse.WheelDown = Wiimote.Plus;
+Mouse.WheelUp = Wiimote.Minus;
+/*if(Nunchuk.Up)then Mouse.CursorPosY = Mouse.CursorPosY - 10;
+if(Nunchuk.Down) then Mouse.CursorPosY = Mouse.CursorPosY + 10;
+if(Nunchuk.Left) then Mouse.CursorPosX = Mouse.CursorPosX - 10;
+if(Nunchuk.Right) then Mouse.CursorPosX = Mouse.CursorPosX + 10 ;  */
+//Key.Q = Nunchuk.Up;
+Key.Shift = Nunchuk.C;
+Mouse.RightButton = Nunchuk.Z;
+Mouse.LeftButton = Wiimote.A
+Key.E = Wiimote.1;
+/*if Wiimote.SwingVertical or Wiimote.SwingHorizontal {
+
+Press(Mouse.LeftButton);
+Wait(0.75 seconds);
+Release(Mouse.LeftButton);
+}
+Key.E = Nunchuk.Z
+if Wiimote.two {
+wait(50 miliseconds);
+Press(Key.T);
+wait(1 miliseconds);
+Release(Key.T);
+wait(1 miliseconds);
+Press(Key.shift);
+wait(1 miliseconds);
+Press(Key.Six);
+wait(5 miliseconds);
+Release(Key.six);
+Release(Key.shift);
+Type("gamemode 1");
+Press(Key.Enter);
+Release(Key.enter);
+
+}
+if Wiimote.1 {
+wait(50 miliseconds);
+Press(Key.T);
+wait(1 miliseconds);
+Release(Key.T);
+wait(1 miliseconds);
+Press(Key.shift);
+wait(1 miliseconds);
+Press(Key.Six);
+wait(5 miliseconds);
+Release(Key.six);
+Release(Key.shift);
+Type("gamemode 0");
+Press(Key.Enter);
+Release(Key.enter);
+
+}    */
+ if BalanceBoard.BackLeft >= 10 {
+ Key.A and Key.S = true
+
+ } else {
+
+     Key.A and Key.S = false
+
+ }
+
+  if BalanceBoard.BackRight >= 10 {
+ Key.D and Key.S = true
+
+ } else {
+
+     Key.D and Key.S = false
+
+ }
+
+  if BalanceBoard.FrontLeft >= 10 {
+ Key.A and Key.W = true
+
+ } else {
+
+     Key.A and Key.W = false
+
+ }
+
+  if BalanceBoard.FrontRight >= 10 {
+ Key.D and Key.W = true
+
+ } else {
+
+     Key.D and Key.W = false
+
+ }
+
+
+ if   BalanceBoard.Weight < 10 then Key.Space = true else Key.Space = false
+
+
+
+

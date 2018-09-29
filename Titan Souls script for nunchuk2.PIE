@@ -1,0 +1,10 @@
+﻿// Titan Souls script
+KeyBoard.C = Wiimote.A
+KeyBoard.X = Wiimote.B
+KeyBoard.Up = Nunchuk.Up
+KeyBoard.Down = Nunchuk.DOwn
+KeyBoard.Left = Nunchuk.Left
+KeyBoard.Right = Nunchuk.Right
+Keyboard.Alt = Wiimote.One
+KeyBoard.Tab = Wiimote.Two
+

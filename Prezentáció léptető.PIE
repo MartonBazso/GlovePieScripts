@@ -1,0 +1,12 @@
+﻿   Key.Left = Wiimote.Left
+   Key.Right = Wiimote.Right
+   if(key.A) then Wiimote.Led1 = false
+   if Key.S then Wiimote.Led1 = true
+   Key.Esc = Wiimote.home
+   Key.Space = Wiimote.A
+
+   /* if Wiimote.Up then Mouse.CursorPosY -= 5
+    if Wiimote.Down then Mouse.CursorPosY += 5
+    if Wiimote.Left then Mouse.CursorPosX -= 5
+    if Wiimote.Right then Mouse.CursorPosX += 5
+    Mouse.LeftButton = Wiimote.B       */

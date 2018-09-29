@@ -1,0 +1,8 @@
+﻿// Titan Souls script
+KeyBoard.C = Nunchuk.C
+KeyBoard.X = NUnchuk.Z
+KeyBoard.Up = Nunchuk.Up
+KeyBoard.Down = Nunchuk.DOwn
+KeyBoard.Left = Nunchuk.Left
+KeyBoard.Right = Nunchuk.Right
+

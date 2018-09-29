@@ -1,0 +1,59 @@
+﻿
+ if Key.Q then BalanceBoard.LED = false
+if Key.E then BalanceBoard.LED = true
+
+/*if BalanceBoard.Weight < 15 {
+
+Press(Key.Space)
+wait(1ms)
+Release(Key.Space)
+}
+
+if BalanceBoard.Weight > 20 then debugprint( "BalanceBoard.BackLeft: " + BalanceBoard.BackLeft )
+if BalanceBoard.Weight > 20 then debugprint( "BalanceBoard.BackRight: " + BalanceBoard.BackRight )
+if BalanceBoard.Weight > 20 then debugprint( "BalanceBoard.FrontLeft: " + BalanceBoard.FrontLeft )
+if BalanceBoard.Weight > 20 then debugprint( "BalanceBoard.FrontRight: " + BalanceBoard.FrontRight ) */
+
+/*if BalanceBoard.WeightFront > 1 then Key.W = true else Key.W = False
+if BalanceBoard.WeightBack > 1 then Key.S = true else Key.S = false
+if BalanceBoard.WeightLeft > 1 then Key.A = true else Key.A = False
+if BalanceBoard.WeightRight > 1 then Key.D =  true else Key.D = false
+ */
+ if BalanceBoard.BackLeft >= 10 {
+ Key.A and Key.S = true
+
+ } else {
+
+     Key.A and Key.S = false
+
+ }
+
+  if BalanceBoard.BackRight >= 10 {
+ Key.D and Key.S = true
+
+ } else {
+
+     Key.D and Key.S = false
+
+ }
+
+  if BalanceBoard.FrontLeft >= 10 {
+ Key.A and Key.W = true
+
+ } else {
+
+     Key.A and Key.W = false
+
+ }
+
+  if BalanceBoard.FrontRight >= 10 {
+ Key.D and Key.W = true
+
+ } else {
+
+     Key.D and Key.W = false
+
+ }
+
+
+ if   BalanceBoard.Weight < 10 then Key.Space = true else Key.Space = false
